@@ -1,0 +1,1240 @@
+[2024-09-12T05:54:25.559Z] info: docker.yaml was copied to the config folder
+[2024-09-12T05:54:25.599Z] info: custom.css was copied to the config folder
+[2024-09-12T05:54:25.603Z] info: custom.js was copied to the config folder
+[2024-09-12T05:54:25.692Z] info: kubernetes.yaml was copied to the config folder
+[2024-09-12T05:54:27.975Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T05:54:27.982Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:54:27.988Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T05:54:28.007Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T05:54:28.007Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:54:28.009Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T05:54:30.891Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T05:54:30.893Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:30.893Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T05:54:30.894Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T05:54:30.895Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:30.898Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T05:54:30.899Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T05:54:30.900Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:30.900Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T05:54:46.127Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T05:54:46.128Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:54:46.129Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T05:54:46.131Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T05:54:46.131Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:54:46.132Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T05:54:49.132Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T05:54:49.133Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:49.133Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T05:54:49.134Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T05:54:49.134Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:49.135Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T05:54:49.135Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T05:54:49.136Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:54:49.136Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T05:55:06.443Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T05:55:06.444Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:55:06.445Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T05:55:06.447Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T05:55:06.447Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:55:06.448Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T05:55:09.452Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T05:55:09.452Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:09.453Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T05:55:09.453Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T05:55:09.454Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:09.454Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T05:55:09.454Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T05:55:09.455Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:09.455Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T05:55:14.439Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T05:55:14.440Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:55:14.441Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T05:55:14.443Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T05:55:14.443Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T05:55:14.444Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T05:55:17.451Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T05:55:17.452Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:17.452Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T05:55:17.453Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T05:55:17.453Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:17.454Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T05:55:17.454Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T05:55:17.455Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T05:55:17.455Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T06:01:39.122Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T06:01:39.123Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:01:39.124Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T06:01:39.127Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T06:01:39.127Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:01:39.127Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T06:01:42.060Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T06:01:42.060Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:01:42.061Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T06:01:42.062Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T06:01:42.062Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:01:42.062Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T06:01:42.063Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T06:01:42.063Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:01:42.063Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T06:02:01.755Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T06:02:01.755Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:02:01.756Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T06:02:01.758Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T06:02:01.758Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:02:01.759Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T06:02:04.031Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T06:02:04.032Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:02:04.032Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T06:02:04.035Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T06:02:04.036Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:02:04.036Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T06:02:04.779Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T06:02:04.780Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.780Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T06:02:04.781Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T06:02:04.781Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.781Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T06:02:04.781Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T06:02:04.782Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.782Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T06:02:04.782Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T06:02:04.782Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.782Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T06:02:04.783Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T06:02:04.784Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.784Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034066112
+[2024-09-12T06:02:04.784Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T06:02:04.785Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:02:04.785Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-12T06:03:38.173Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-12T06:03:38.177Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:03:38.179Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-12T06:03:38.182Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-12T06:03:38.182Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-12T06:03:38.183Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-12T06:03:41.164Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-12T06:03:41.164Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:03:41.165Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-12T06:03:41.166Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-12T06:03:41.167Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:03:41.167Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-12T06:03:41.168Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-12T06:03:41.169Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-12T06:03:41.169Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:35:47.718Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:35:47.721Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:47.722Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:35:47.724Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:35:47.724Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:47.725Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:35:50.636Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:35:50.636Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:35:50.636Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:35:50.637Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:35:50.637Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:35:50.638Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:35:50.638Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:35:50.639Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:35:50.639Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:35:50.653Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:35:50.654Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:50.654Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:35:50.656Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:35:50.657Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:50.657Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:35:57.896Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:35:57.897Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:57.897Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:35:57.899Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:35:57.900Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:35:57.901Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:36:00.908Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:36:00.909Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:00.909Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:36:00.910Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:36:00.910Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:00.910Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:36:00.911Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:36:00.911Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:00.912Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:36:19.351Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:36:19.351Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:36:19.352Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:36:19.354Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:36:19.355Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:36:19.355Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:36:22.347Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:36:22.348Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:22.348Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:36:22.349Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:36:22.349Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:22.350Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:36:22.350Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:36:22.350Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:22.351Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:36:44.170Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:36:44.170Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:36:44.171Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:36:44.173Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:36:44.174Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:36:44.174Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:36:47.180Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:36:47.180Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:47.180Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:36:47.181Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:36:47.181Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:47.182Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:36:47.182Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:36:47.182Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:36:47.183Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:37:53.319Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:37:53.319Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:37:53.323Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:37:53.342Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:37:53.343Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:37:53.343Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:37:56.300Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:37:56.300Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:37:56.300Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:37:56.301Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:37:56.301Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:37:56.302Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:37:56.302Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:37:56.302Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:37:56.303Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:38:01.576Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:38:01.577Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:38:01.578Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:38:01.581Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:38:01.581Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:38:01.582Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:38:04.555Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:38:04.556Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:38:04.556Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:38:04.557Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:38:04.557Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:38:04.557Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:38:04.558Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:38:04.558Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:38:04.558Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:39:28.051Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:39:28.051Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:39:28.052Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:39:28.054Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:39:28.054Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:39:28.054Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:39:31.052Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:39:31.052Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:39:31.053Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:39:31.053Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:39:31.054Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:39:31.054Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:39:31.054Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:39:31.055Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:39:31.055Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status
+[2024-09-13T15:40:58.104Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Account/login...
+[2024-09-13T15:40:58.105Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:40:58.106Z] error: <kavitaProxyHandler> Unable to login to Kavita API: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at login (/app/.next/server/pages/api/services/proxy.js:4408:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async KavitaProxyHandler (/app/.next/server/pages/api/services/proxy.js:4491:5)
+    at async Object.apiResolver (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/api-utils/node.js:366:9)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:481:9)
+    at async Object.fn (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:741:37)
+    at async Router.execute (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/router.js:252:36)
+    at async NextNodeServer.run (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:365:29)
+    at async NextNodeServer.handleRequest (/app/node_modules/.pnpm/next@12.3.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:303:20)
+[2024-09-13T15:40:58.109Z] error: <httpProxy> Error calling http://10.10.10.24:5000/api/Stats/server/stats...
+[2024-09-13T15:40:58.109Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 10.10.10.24:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.10.10.24',
+    port: 5000
+  }
+]
+[2024-09-13T15:40:58.110Z] error: <kavitaProxyHandler> Error getting data from Kavita: http://10.10.10.24:5000/api/Stats/server/stats status 500. Data: { error: [Object] }
+[2024-09-13T15:41:01.100Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/status/datastore-usage...
+[2024-09-13T15:41:01.100Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:41:01.101Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/status/datastore-usage
+[2024-09-13T15:41:01.101Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks...
+[2024-09-13T15:41:01.102Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:41:01.102Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/tasks?errors=true&limit=100&since=1726034617561
+[2024-09-13T15:41:01.103Z] error: <httpProxy> Error calling https://10.10.10.70:8007/api2/json/nodes/localhost/status...
+[2024-09-13T15:41:01.103Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.10.10.70:8007
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.10.10.70',
+    port: 8007
+  }
+]
+[2024-09-13T15:41:01.103Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://10.10.10.70:8007/api2/json/nodes/localhost/status

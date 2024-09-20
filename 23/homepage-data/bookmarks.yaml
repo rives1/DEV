@@ -1,0 +1,45 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+
+- Media:
+  - YouTube:
+    - abbr: YT
+      icon: youtube.png
+      href: https://youtube.com/
+
+- Comms:
+  - Whatsapp:
+    - abbr: WA
+      icon: whatsapp.png
+      href: https://web.whatsapp.com/
+
+  - Gestendo:
+    - abbr: GS
+      icon: web.png
+      href: https://app.gestendo.it/
+
+- Shop:
+  - Amazon:
+    - abbr: AM
+      icon: amazon.png
+      href: https://www.amazon.it/
+
+  - Aliexpress:
+    - abbr: AL
+      icon: aliexpress.png
+      href: https://it.aliexpress.com/
+
+- Google Services:
+  - Calendar:
+    - abbr: GC
+      icon: google-calendar.png
+      href: https://calendar.google.com/calendar/u/0/r?tab=rc
+
+  - Photo:
+    - abbr: GP
+      icon: google-photos.png
+      href: https://photos.google.com/?pli=1
+
+

@@ -1,0 +1,195 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+
+- Proxmox:
+  - Datacenter:      
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.37:8006
+      #description: Full stack 
+      widget:
+        type: proxmox
+        url: https://10.10.10.37:8006
+        username: {{HOMEPAGE_VAR_PMOX_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PMOX_PWD_KEY}}
+
+  - Pmox Backup:
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.70:8007
+      widget:
+        type: proxmoxbackupserver
+        url: https://10.10.10.70:8007
+        username: {{HOMEPAGE_VAR_PBS_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PBS_PWD_KEY}}
+
+- Hypervisor:
+  - kk01pve100:      
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.37:8006
+      #description: Pmox kk01vm03
+      widget:
+        type: proxmox
+        url: https://10.10.10.37:8006
+        username: {{HOMEPAGE_VAR_PMOX_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PMOX_PWD_KEY}}
+        node: kk01pve100
+  - kk01pve101:      
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.60:8006
+      #description: Pmox kk01vm03
+      widget:
+        type: proxmox
+        url: https://10.10.10.60:8006
+        username: {{HOMEPAGE_VAR_PMOX_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PMOX_PWD_KEY}}
+        node: kk01pve101
+  - kk01pve102:      
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.61:8006
+      #description: Pmox kk01vm03
+      widget:
+        type: proxmox
+        url: https://10.10.10.61:8006
+        username: {{HOMEPAGE_VAR_PMOX_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PMOX_PWD_KEY}}
+        node: kk01pve102
+  - kk01pve105:      
+      #icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.65:8006
+      #description: Pmox kk01vm03
+      widget:
+        type: proxmox
+        url: https://10.10.10.65:8006
+        username: {{HOMEPAGE_VAR_PMOX_USER_KEY}}
+        password: {{HOMEPAGE_VAR_PMOX_PWD_KEY}}
+        node: kk01pve105
+        
+- Containers:
+  - Portainer 01:
+      icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: http://10.10.10.23:9000
+      description: Portainer
+      widget:
+        type: portainer
+        url: http://10.10.10.23:9000
+        env: 2
+        key: {{HOMEPAGE_VAR_PORTAINER_KEY1}}
+
+  - Portainer 03:
+      icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: http://10.10.10.24:9000
+      description: Portainer
+      widget:
+        type: portainer
+        url: http://10.10.10.24:9000
+        env: 2
+        key: {{HOMEPAGE_VAR_PORTAINER_KEY3}}
+
+- Media/Comm/Storage:
+  - Kavita:
+      icon: kavita.png
+      href: http://10.10.10.24:5000
+      #description: Comics manager/viewer
+      showstats: true
+      widget:
+        type: kavita
+        url: http://10.10.10.24:5000
+        username: {{HOMEPAGE_VAR_KAV_USER_KEY}}
+        password: {{HOMEPAGE_VAR_KAV_PWD_KEY}}
+
+#  - Emby:
+#      icon: emby.png
+#      href: http://10.10.10.24:8096
+#      widget:
+#        type: emby
+#        url: http://10.10.10.24:8096
+#        key: c2a560a512e940b698cb7ca773499b5e
+#        #key: {{HOMEPAGE_VAR_EMBY_TOKEN}}
+#        enableBlocks: true # optional, defaults to false
+#        fields: ["movies", "series","episodes"]  
+#        enableNowPlaying: true # optional, defaults to true
+#        enableUser: true # optional, defaults to false  
+
+  - Synology:
+      icon: synology.svg # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.10.40:5001
+      #widget:
+      #  type: diskstation
+      #  url: https://10.10.10.40:5001
+      #  username: {{HOMEPAGE_VAR_SYN_USER}}
+      #  password: {{HOMEPAGE_VAR_SYN_PWD}}
+      #  #volume: volume_N # optional        
+
+#  - Plex:
+#      icon: plex.png
+#      href: http://10.10.10.20:32400
+#      widget:
+#        type: plex
+#        url: http://10.10.10.20:32400
+#        key: {{HOMEPAGE_VAR_PLEX_TOKEN}}
+#        fields: ["streams", "tv", "movies"]
+
+#  - Tautulli:
+#      icon: plex.png
+#      href: http://10.10.10.23:8181
+#      widget:
+#        type: tautulli
+#        url: http://10.10.10.23:8181
+#        key: {{HOMEPAGE_VAR_TAUT_TOKEN}}
+
+
+#  - Jellyfin:
+#      icon: jellyfin.png
+#      href: http://10.10.10.24:8096
+#      widget:
+#        type: jellyfin
+#        url: http://10.10.10.24:8096
+#        key: 3eca6cad49714b35889385d18c02d8ff
+#        enableBlocks: true
+#        enableNowPlaying: false
+
+- Network:
+  - PiHole:
+      icon: pi-hole.svg # icons found here https://github.com/walkxcode/dashboard-icons
+      href: http://10.250.0.1/admin
+      widget:
+        type: pihole
+        url: http://10.250.0.1
+        key: {{HOMEPAGE_VAR_PIHOLE_API_KEY}} 
+
+  - Ookla:
+      icon: speedtest-tracker.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: http://10.10.10.23:8765
+      widget:
+        type: speedtest
+        url: http://10.10.10.23:8765
+
+#  - qBittorrent:
+#      icon: qbittorrent.png # icons found here https://github.com/walkxcode/dashboard-icons
+#      href: http://10.10.10.199:8080
+#      widget:
+#        type: qbittorrent
+#        url: http://10.10.10.199:8080
+#        username: {{HOMEPAGE_VAR_QBI_USER}}
+#        password: {{HOMEPAGE_VAR_QBI_PWD}}
+        
+- Network1:        
+  - Zabbix:
+      icon: zabbix.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: http://10.10.10.10:8080/
+
+  - Unify:
+      icon: unifi.png # icons found here https://github.com/walkxcode/dashboard-icons
+      href: https://10.10.249.100:8443/
+      #widget:
+      #  type: unifi
+      #  url: https://10.10.249.100:8443/
+      #  username: {{HOMEPAGE_VAR_UNI_USER}}
+      #  password: {{HOMEPAGE_VAR_UNI_PWD}}
+      #  #site: Site Name # optional
+      
+  #- Landscape:
+  #    icon: ubuntu.png # icons found here https://github.com/walkxcode/dashboard-icons
+  #    href: https://kk01land01/account/standalone
+

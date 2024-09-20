@@ -1,0 +1,195 @@
+#version: '3.8'
+#---------------------------------------------------------------------#
+#     Homarr - A simple, yet powerful dashboard for your server.     
+#---------------------------------------------------------------------#
+services:
+#  homarr:
+#    container_name: homarr
+#    image: ghcr.io/ajnart/homarr:latest
+#    restart: unless-stopped
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+#      - ./homarr/configs:/app/data/configs
+#      - ./homarr/icons:/app/public/icons
+#      - ./homarr/data:/data
+#    ports:
+#      - '7575:7575'
+
+#---------------------------------------------------------------------#
+#     portainer - gestione container docker
+#---------------------------------------------------------------------#
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+    ports:
+      - 9000:9000
+
+#---------------------------------------------------------------------#
+#     Dash. graphical statistics on server 
+#---------------------------------------------------------------------#
+#  dash:
+#    container_name: dash
+#    image: mauricenino/dashdot:latest
+#    restart: unless-stopped
+#    privileged: true
+#    ports:
+#      - '80:3001'
+#    volumes:
+#      - /:/mnt/host:ro
+
+
+#---------------------------------------------------------------------#
+#     Home Page 
+#---------------------------------------------------------------------#
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./homepage-data:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations, see alternative methods
+    environment:
+      PUID: $PUID # read them from .env
+      PGID: $PGID # read them from .env
+
+    env_file: ./homepage-data/variables.env # use variables.env into data area
+
+#---------------------------------------------------------------------#
+#     Tautulli - Plex stats
+#---------------------------------------------------------------------#
+#  tautulli:
+#    image: ghcr.io/tautulli/tautulli
+#    container_name: tautulli
+#    restart: unless-stopped
+#    volumes:
+#      - ./tautulli-data:/config
+#    environment:
+#      - PUID=$PUID
+#      - PGID=$PGID
+#      - TZ=Europe/Rome
+#    ports:
+#      - 8181:8181
+
+#---------------------------------------------------------------------#
+#     Speedtest - ookla connection hourly
+#---------------------------------------------------------------------#
+  speedtest:
+      container_name: speedtest
+      image: henrywhitaker3/speedtest-tracker
+      ports:
+          - 8765:80
+      volumes:
+          - ./speedtest-data:/config
+      environment:
+          - TZ=Europe/Rome
+          - PUID=$PUID
+          - PGID=$PGID
+          - OOKLA_EULA_GDPR=true
+      logging:
+          driver: "json-file"
+          options:
+              max-file: "10"
+              max-size: "200k"
+      restart: unless-stopped
+
+#---------------------------------------------------------------------#
+#     Watchtower monitor and update containers images
+#---------------------------------------------------------------------#
+  watchtower:
+        container_name: watchtower
+        image: containrrr/watchtower:latest
+        restart: unless-stopped
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+        command: --interval 480
+
+#---------------------------------------------------------------------#
+#     gestione file flussi e conversioni
+#---------------------------------------------------------------------#
+#  fileflows:
+#    image: revenz/fileflows
+#    container_name: fileflows
+#    environment:
+#      - TZ=Europe/Rome
+#      - ./fileflows-data/temp=/temp
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock:ro
+#      - ./fileflows-data/data:/app/Data
+#      - ./fileflows-data/logs:/app/Logs
+#      - ./fileflows-data/temp:/temp
+#      - ./fileflows-data/media:/media
+#    ports:
+#      - 19200:5000
+#    restart: unless-stopped      
+
+#---------------------------------------------------------------------#
+#     veloren game server
+#---------------------------------------------------------------------#
+#  veloren:
+#    image: registry.gitlab.com/veloren/veloren/server-cli:weekly
+#    stdin_open: true
+#    tty: true
+#    container_name: veloren-game-server-master
+#    ports:
+#      - "14004:14004"
+#      - "14005:14005"
+#      - "14006:14006/udp"
+#    restart: on-failure:0
+#    volumes:
+#        - ./veloren-data:/opt/userdata
+#    environment:
+#        - RUST_LOG=debug,common::net=info
+
+#---------------------------------------------------------------------#
+#     guacamole: rdp web client
+#---------------------------------------------------------------------#
+#  guacamole:
+#    image: jwetzell/guacamole
+#    container_name: guacamole
+#    volumes:
+#      - ./postgres:/config
+#    ports:
+#      - 8080:8080
+#volumes:
+#  postgres:
+#    driver: local
+
+#---------------------------------------------------------------------#
+#     Mailrise: notifiche su app via email
+#---------------------------------------------------------------------#
+#
+#  mailrise:
+#    image: yoryan/mailrise:latest
+#    container_name: mailrise
+#    ports:
+#      - '8025:8025'
+#    restart: unless-stopped
+#    volumes:
+#      - ./mailrise/mailrise.conf:/etc/mailrise.conf
+
+
+#---------------------------------------------------------------------#
+#     Mailrise: notifiche su app via email
+#---------------------------------------------------------------------#
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    environment:
+      - GF_SERVER_ROOT_URL=http://my.grafana.server/
+      - GF_INSTALL_PLUGINS=grafana-clock-panel
+    ports:
+      - '3300:3000'
+    volumes:
+      - grafana-storage:/var/lib/grafana
+volumes:
+  grafana-storage: {}      

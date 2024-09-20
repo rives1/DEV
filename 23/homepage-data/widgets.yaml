@@ -1,0 +1,62 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+
+- resources:
+    #label: System
+    cpu: true
+    memory: true
+    uptime: true
+    disk: /
+
+- search:
+    provider: google
+    focus: true
+    target: _blank
+
+- datetime:
+    locale: it
+    text_size: 2x1
+    format:
+      timeStyle: short
+      hourCycle: h23
+      dateStyle: short
+
+- openmeteo:
+    label: Hm # optional
+    latitude: 45.65017
+    longitude: 9.85050
+    timezone: Europe/Rome # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+
+- openmeteo:
+    label: Jb # optional
+    latitude: 45.50500
+    longitude: 9.22705
+    timezone: Europe/Rome # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+
+- openmeteo:
+    label: Alm # optional
+    latitude: 54.89525
+    longitude: 52.27936
+    timezone: Europe/Moscow # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+
+- openmeteo:
+    label: Sam # optional
+    latitude: 9.528009 
+    longitude: 100.044194
+    timezone: Asia/Bangkok # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+# - openmeteo:
+#     label: Seoul # optional
+#     latitude: 37.56422
+#     longitude: 126.99129
+#     timezone: Asia/Seoul # optional
+#     units: metric # or imperial
+#     cache: 5 # Time in minutes to cache API responses, to stay within limits    
