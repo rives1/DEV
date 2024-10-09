@@ -1,1 +1,1 @@
-prova 123
+Il set di cartelle definische i file compose.yml per i docker dei server con gli ip = al nome della cartella
